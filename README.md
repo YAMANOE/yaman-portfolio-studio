@@ -41,3 +41,9 @@ DM Sans and Manrope are loaded from Google Fonts, with system-font fallbacks. Th
 ## Edit
 
 Update the `projects` array in `dist/app.js` to change project descriptions or repository links. Update `dist/index.html` for bio and contact details. Replace the conceptual covers with real screenshots when available.
+
+## GitHub Pages deployment
+
+The workflow in `.github/workflows/deploy-pages.yml` publishes only `dist/` to GitHub Pages when website files are pushed to `codex/portfolio`. It also supports manual runs. It uses GitHub's built-in token and requires no stored deployment secret.
+
+The repository is public with the owner's approval. GitHub Pages uses GitHub Actions as its publishing source. Updates to website files on `codex/portfolio` deploy automatically. The existing private Sites deployment is independent and remains available.
